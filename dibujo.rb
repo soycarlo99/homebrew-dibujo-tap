@@ -8,6 +8,8 @@ class Dibujo < Formula
   depends_on "sfml"
 
   def install
+    ENV["CXXFLAGS"] = ""
+    ENV["LDFLAGS"] = ""
     system "make"
     bin.install "dibujov0.1"
   end
