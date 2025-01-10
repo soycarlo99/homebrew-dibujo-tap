@@ -31,4 +31,5 @@ class Dibujo < Formula
 
       Enjoy drawing!
     EOS
+  end 
 end
