@@ -12,6 +12,7 @@ class Dibujo < Formula
     ENV["LDFLAGS"] = "-L#{Formula["sfml@2"].opt_lib} -lsfml-graphics -lsfml-window -lsfml-system"
     system "make"
     bin.install "dibujov0.1"
+    (share/"dibujo").install "arial.ttf"
   end
 
   test do
