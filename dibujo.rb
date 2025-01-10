@@ -1,15 +1,15 @@
 class Dibujo < Formula
   desc "SFML Drawing Tool with Features"
   homepage "https://github.com/soycarlo99/dibujo"
-url "https://github.com/soycarlo99/dibujo/releases/tag/v1.2"
-  sha256 "2e2c427cd9fba4ea12c7f3c1e08763a4aead23f06da283e2e2f58ee42cab7a00"
+  url "https://github.com/soycarlo99/dibujo/releases/tag/v1.2"
+  sha256 "b3ff1b77f33da60c5725fe4ee72a6d1c4cf0ba189e48fbe8eb1910c77caa040c"
   license "MIT"
 
 
   depends_on "sfml"
 
   def install
-    ENV["CXXFLAGS"] = "-std=c++11 -I#{Formula["sfml"].opt_include}"
+    ENV["CXXFLAGS"] = "-std=c++17 -I#{Formula["sfml"].opt_include}"
     ENV["LDFLAGS"] = "-L#{Formula["sfml"].opt_lib} -lsfml-graphics -lsfml-window -lsfml-system"
     system "make"
     bin.install "dibujov0.1"
