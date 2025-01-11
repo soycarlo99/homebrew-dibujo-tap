@@ -1,7 +1,7 @@
 class Dibujo < Formula
   desc "SFML Drawing Tool with Features"
   homepage "https://github.com/soycarlo99/dibujo"
-  url "https://github.com/soycarlo99/dibujo/archive/v1.6.tar.gz"
+  url "https://github.com/soycarlo99/dibujo/archive/v0.01.tar.gz"
   sha256 "c10170fe420beb42a9b3164cad3a12c5d46a3914db0e2a12c0e3ed1093bff73b"
   license "MIT"
 
@@ -27,7 +27,7 @@ class Dibujo < Formula
 
   def caveats
     <<~EOS
-      Thank you for installing Dibujo v1.6!
+      Thank you for installing Dibujo v0.01!
 
       To run the program, simply type:
         dibujo
