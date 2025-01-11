@@ -1,8 +1,8 @@
 class Dibujo < Formula
   desc "SFML Drawing Tool with Features"
   homepage "https://github.com/soycarlo99/dibujo"
-  url "https://github.com/soycarlo99/dibujo/archive/v1.4.tar.gz"
-  sha256 "da6997a179b8eed59daaaaa84df31db369cdf04975a8a34d20ab35d87d29c366"
+  url "https://github.com/soycarlo99/dibujo/archive/v1.6.tar.gz"
+  sha256 "33e6681f928da0c532ba03f0723b6a2fc6b649b5dcdcb160dbf7f4f7d94154ed"
   license "MIT"
 
   depends_on "sfml@2"
@@ -12,6 +12,7 @@ class Dibujo < Formula
     ENV["LDFLAGS"] = "-L#{Formula["sfml@2"].opt_lib} -lsfml-graphics -lsfml-window -lsfml-system"
     system "make"
     bin.install "dibujov0.1"
+
     (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png"
   end
 
