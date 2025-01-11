@@ -12,7 +12,7 @@ class Dibujo < Formula
     ENV["LDFLAGS"] = "-L#{Formula["sfml@2"].opt_lib} -lsfml-graphics -lsfml-window -lsfml-system"
     system "make"
     bin.install "dibujov0.1"
-    (share/"dibujo").install "arial.ttf"
+    (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png"
   end
 
   test do
@@ -21,7 +21,7 @@ class Dibujo < Formula
 
   def caveats
     <<~EOS
-      Thank you for installing Dibujo v1.2!
+      Thank you for installing Dibujo v1.4!
 
       To run the program, execute:
         dibujov0.1
@@ -31,5 +31,5 @@ class Dibujo < Formula
 
       Enjoy drawing!
     EOS
-  end 
+  end
 end
