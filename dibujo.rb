@@ -13,7 +13,8 @@ class Dibujo < Formula
     system "make"
     bin.install "dibujov0.1"
 
-    (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png"
+    (share/"dibujo")
+      bin.install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png"
   end
 
   test do
