@@ -2,7 +2,7 @@ class Dibujo < Formula
   desc "SFML Drawing Tool with Features"
   homepage "https://github.com/soycarlo99/dibujo"
   url "https://github.com/soycarlo99/dibujo/archive/v0.09.tar.gz"
-sha256 "d0bff68e7ff8cb9e85ae034e735f1976e2d30619c32768838704e677f48c3b82"
+sha256 "804a5811b257bb13054447e70ba15306d1ed239c3c9ae00fe70887f85215089f"
   license "MIT"
 
   depends_on "sfml@2"
@@ -15,7 +15,7 @@ sha256 "d0bff68e7ff8cb9e85ae034e735f1976e2d30619c32768838704e677f48c3b82"
     system "make"
 
     # Install the binary under a new name:
-    bin.install "dibujo_v0.09" => "dibujo"
+    bin.install "dibujo_v0.10" => "dibujo"
 
     # Install assets
     (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png", "triangle.png", "bucket.png", "rainbow.png", "logo.png"
