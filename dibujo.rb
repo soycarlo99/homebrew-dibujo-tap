@@ -1,8 +1,8 @@
 class Dibujo < Formula
   desc "SFML Drawing Tool with Features"
   homepage "https://github.com/soycarlo99/dibujo"
-  url "https://github.com/soycarlo99/dibujo/archive/v0.09.tar.gz"
-sha256 "804a5811b257bb13054447e70ba15306d1ed239c3c9ae00fe70887f85215089f"
+  url "https://codeload.github.com/soycarlo99/dibujo/tar.gz/refs/tags/v0.10"
+sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   license "MIT"
 
   depends_on "sfml@2"
