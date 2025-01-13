@@ -18,7 +18,7 @@ sha256 "2539efeddaf316a893813ca037ed56f2b2ae4a10b0b041d144e2144420f72b82"
     bin.install "dibujov0.1" => "dibujo"
 
     # Install assets
-    (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png", "triangle.png", "bucket.png", "rainbow.png"
+    (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png", "triangle.png", "bucket.png", "rainbow.png", "logo.png"
   end
 
   test do
