@@ -15,7 +15,7 @@ sha256 "2539efeddaf316a893813ca037ed56f2b2ae4a10b0b041d144e2144420f72b82"
     system "make"
 
     # Install the binary under a new name:
-    bin.install "dibujo_v0.08" => "dibujo"
+    bin.install "dibujo_v0.09" => "dibujo"
 
     # Install assets
     (share/"dibujo").install "arial.ttf", "circle.png", "squares.png", "draw.png", "text.png", "triangle.png", "bucket.png", "rainbow.png", "logo.png"
